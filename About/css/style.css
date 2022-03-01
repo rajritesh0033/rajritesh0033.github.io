@@ -1,0 +1,212 @@
+
+
+
+.DisplayPicture {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	left: 25%;
+	top: 10%;
+	
+	
+}
+
+
+
+.name {
+	position: relative;
+	font-family: 'Rubik', sans-serif;
+	font-size: 45px;
+	margin-left: 38%;
+	padding-top: 3%;
+	color: #366890;
+  font-weight: 500;
+
+}
+
+.stuff_i_do {
+	position: relative;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	margin-left: 26%;
+	padding-top: 2%;
+
+}
+
+.main-content {
+	position: relative;
+	width: 100%;
+	/*font-family: 'Quicksand', sans-serif;*/
+	/*font-size: 18px;*/
+	margin-left: 0%;
+	/*padding-top: 40%;*/
+	
+}
+
+@media  (max-width: 2560px) {
+
+	.DisplayPicture {
+		display: none;
+	}
+  .namepos{
+        display: block;
+        margin: auto;
+        margin-top: -18%;
+        padding-bottom: 5%;
+      }
+  .mob-face {
+    display: none;
+  }
+  .img-face {
+    display: block;
+  }
+  .for-mob1{
+    display: block;
+  }
+  .for-mob2{
+    display: block;
+  }
+
+  .name {
+    margin-left: 24%;
+    margin-top: -28%;
+  }
+  .stuff_i_do {
+  	margin: auto;
+    text-align: center;
+  }
+  .main-content {
+  	margin-top: -15%;
+  }
+  .resume {
+    margin-top: -10%;
+  }
+}
+@media  (max-width: 1551px) {
+	.DisplayPicture {
+		display: none;
+	}
+  .namepos{
+        display: block;
+        margin: auto;
+        margin-top: -18%;
+        padding-bottom: 5%;
+      }
+  .mob-face {
+    display: none;
+  }
+  .img-face {
+    display: block;
+  }
+  .for-mob1{
+    display: block;
+  }
+  .for-mob2{
+    display: block;
+  }
+  .name {
+    margin: -35% 0% 0% 0%;
+    text-align: center;
+  }
+  .stuff_i_do {
+  	margin : auto;
+    text-align: center;
+  }
+  .main-content {
+  	margin-top: -16%;
+  }
+  .resume {
+    margin-top: -15%;
+  }
+}
+
+/* phone */
+@media  (max-width: 550px) {
+
+	.DisplayPicture { 
+		display: block;
+	}
+
+  .container2 {
+  	display: block;
+  }
+  .namepos{
+        margin-top: 0%;
+        padding-bottom: 5%;
+      }
+
+  .mob-face {
+    display: block;
+    margin-top: 30%;
+    padding-bottom: 8%;
+  }
+  .img-face {
+    display: none;
+  }
+  .for-mob1{
+    display: none;
+  }
+  .for-mob2{
+    display: none;
+  }
+
+  .name {
+  	width: 100%;
+    
+    margin-top: -140%;
+    font-size: 2em;
+  }
+  .stuff_i_do {
+  	margin-left: 0%;
+  	width: 100%;
+  	text-align: center;
+  }
+  .main-content {
+  	margin-top: -80%;
+  }
+
+  @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+      
+      .namepos{
+        margin-top: 32%;
+        padding-bottom: 5%;
+      }
+
+      .name {
+              width: 100%;
+    
+              margin-top: -194%;
+            font-size: 2em;
+      }
+
+      .stuff_i_do {
+             margin-left: 0%;
+             width: 100%;
+            text-align: center;
+  }
+  .mob-face {
+    display: block;
+    margin-top: 30%;
+    padding-bottom: 8%;
+  }
+  .img-face {
+    display: none;
+  }
+  .for-mob1{
+    display: none;
+  }
+  .for-mob2{
+    display: none;
+  }
+
+  .main-content {
+    margin-top: -120%;
+   }
+  }
+
+/* iPhone 8 */
+
+@media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) { }
+
+
+}

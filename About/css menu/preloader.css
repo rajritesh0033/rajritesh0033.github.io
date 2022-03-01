@@ -1,0 +1,9 @@
+.content {display:none;}
+.preload { 
+    width:100%;
+    height: 100%;
+    position: fixed;
+  /*  top: 25%;
+    left: 25%;*/
+    align-content: center;
+}

@@ -1,0 +1,61 @@
+
+
+
+.DisplayPicture {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	left: 25%;
+	top: 10%;
+	
+	
+}
+
+
+
+.name {
+	position: relative;
+	font-family: 'Rubik', sans-serif;
+	font-size: 60px;
+	margin-left: 38%;
+	padding-top: 3%;
+	color: #366890;
+
+}
+
+.stuff_i_do {
+	position: relative;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	margin-left: 26%;
+	padding-top: 2%;
+
+}
+
+.main-content {
+	position: relative;
+	width: 100%;
+	/*font-family: 'Quicksand', sans-serif;*/
+	/*font-size: 18px;*/
+	margin-left: 0%;
+	padding-top: 40%;
+	
+}
+
+@media screen and (max-width: 2560px) {
+  .name {
+    margin-left: 38%;
+  }
+  .stuff_i_do {
+  	margin-left: 24%
+  }
+}
+@media screen and (max-width: 1551px) {
+  .name {
+    margin-left: 36%;
+  }
+  .stuff_i_do {
+  	margin-left: 18%
+  }
+}
+

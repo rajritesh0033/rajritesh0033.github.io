@@ -1,0 +1,266 @@
+
+
+/* Reset default padding and margin */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* Just adding a font to all content */
+body {
+ // height: 980px; /* just to demonstrate the "position: fixed;" of the navbar*/
+ 
+ // background-position: bottom left;
+ // background-size: cover;
+ // background-repeat: no-repeat;
+  font: 16px/1.2 'Montserrat', sans-serif;
+  
+
+}
+
+/* CONTAINER */
+.container {
+	width: 80%; /* takes up 80% of header(parent element) */
+	margin: auto; /* adjusts itself horizontally and vertically */
+	overflow: hidden;/* If the content overflows its container, it will be hidden behind its border */
+}
+.none {
+	color: #fff;
+}
+
+/* HEADER */
+#brain {
+	background: #fff;
+	text-align: left;
+	position: fixed; /* sticks to the top of the page, regardless of where you scroll */
+	margin-bottom: 50px;
+	width: 100%;
+	z-index: 999; /* puts itself on top of all other elements on the page */
+	padding: 20px 0;
+
+
+}
+
+/* LOGO - the h1 */
+#logo {
+	color: #000;
+	text-align: : left;
+}
+
+#logo span {
+	color: #376890;
+}
+
+#logo a{
+	text-decoration: none;
+	color: #000;
+}
+
+#logo a:hover {
+	color: #376890;
+}
+
+
+/* hiding the checkbox */
+.nav-toggle {
+	display: none;
+}
+
+/* STYLING/POSITIONING THE HAMBURGER MENU */
+.nav-toggle-label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 1em;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	display: block;
+	background: #000;
+	height: 3px;
+	width: 30px;
+	border-radius: 2px;
+	position: relative;
+	transition: all .5s ease-in-out;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	content: '';
+	position: absolute;
+}
+
+.nav-toggle-label span::before {
+	bottom: 10px;
+}
+.nav-toggle-label span::after {
+	top: 10px;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label span {
+	background: #537FA4; /* setting it to the same background as header so it "disappears" */
+	border-width: 13px;
+	border-color: #fff;
+	
+}
+
+/* transforming the before and after span into an X */
+#nav-toggle:checked ~ .nav-toggle-label span::before {
+	transform: rotate(45deg);
+	bottom: 0;
+	background: #000;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label span::after {
+	transform: rotate(-45deg);
+	top: 0;
+	background: #000;
+}
+
+#menu {
+	position: absolute;
+	background: #fff;
+	text-align: center;
+	top: 0%; /* puts itself directly under the preceeding relative positioned element */
+	left: 0;
+	width: 100%;
+	transform: scale(1, 0);
+	transform-origin: top; /* menu appears from the top instead if center, try and comment this out and see for yourself */
+	transition: transform .4s ease-in-out;
+	height:100%;
+
+}
+
+
+}
+
+#menu ul {
+	list-style: none;
+	position: relative;
+	top: 30px;
+
+}
+#menu ul {
+	background-color: #537FA4;
+	height: 100vh;
+	padding-top: 16vh;
+	opacity: .95;
+
+}
+
+#menu li {
+	padding: 20px 40px;
+}
+
+#menu a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	opacity: 0;
+	transition: opacity .15s ease-in-out;
+}
+
+#menu a:hover {
+	color: #c6c6c6;
+	font-style: bold;
+}
+
+#nav-toggle:checked + #menu {
+	transform: scale(1, 1);
+}
+#nav-toggle:checked ~ #menu a {
+	opacity: 1;
+	transition: opacity .25s ease-in-out .35s;
+}
+
+@media screen and (max-width: 2560px) {
+	.powered {
+		margin-top: 10%;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.powered {
+		margin-top: 5%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.powered {
+		margin-top: 14%;
+	}
+}
+@media screen and (max-width: 375px) {
+	.powered {
+		margin-top: 6%;
+	}
+}
+
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+	.powered {
+		margin-top: 28%;
+	}
+}
+/* bredcrums */
+
+@media screen and (max-width: 2560px) {
+	.bredcrums {
+		margin-left: -0.7%;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.bredcrums {
+		margin-left: -0.5%;
+	}
+}
+
+
+/* media query with mobile first approach */
+/* remove the comment around the media query to see the desktop version of the menu */
+
+/*
+@media screen and (min-width: 800px){
+	.nav-toggle-label {
+		display: none;
+	}
+
+	#main-header {
+		border-bottom: 2px solid coral;
+	}
+
+	#main-header .container {
+		display: flex;
+	}
+
+	#main-header #logo {
+		flex:1;
+	}
+	
+	#menu a {
+		opacity: 1;
+	}
+
+	#menu {
+		all: unset;
+		flex: 2;
+	}
+
+	#menu ul {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	#menu li {
+		margin: auto;
+	}
+}
+*/

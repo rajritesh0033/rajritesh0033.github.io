@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 900" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" style="white-space: pre;">
+    <style>
+@keyframes one_t { 0% { transform: translate(200px,99px) scale(0.5,0.5); } 100% { transform: translate(200px,181px) scale(0.8,0.8); } }
+@keyframes one_o { 0% { opacity: 0.5; } 100% { opacity: 1; } }
+@keyframes one-3_t { 0% { transform: translate(200px,264px) scale(0.5,0.5); } 100% { transform: translate(200px,99px) scale(0.5,0.5); } }
+@keyframes one-3_o { 0% { opacity: 0.5; } 100% { opacity: 0.5; } }
+@keyframes one-2_t { 0% { transform: translate(200px,181px) scale(0.8,0.8); } 100% { transform: translate(200px,264px) scale(0.5,0.5); } }
+@keyframes one-2_o { 0% { opacity: 1; } 100% { opacity: 0.5; } }
+    </style>
+    <ellipse id="one" rx="45.5" ry="45.5" stroke="none" fill="#6C6566" stroke-linecap="square" opacity="0.5" transform="translate(200,99) scale(0.5,0.5)" style="animation: 1s linear infinite both one_t, 1s linear infinite both one_o;"/>
+    <ellipse id="one-3" rx="45.5" ry="45.5" stroke="none" fill="#6C6566" stroke-linecap="square" opacity="0.5" transform="translate(200,264) scale(0.5,0.5)" style="animation: 1s linear infinite both one-3_t, 1s linear infinite both one-3_o;"/>
+    <ellipse id="one-2" rx="45.5" ry="45.5" stroke="none" fill="#6C6566" stroke-linecap="square" opacity="1" transform="translate(200,181) scale(0.8,0.8)" style="animation: 1s linear infinite both one-2_t, 1s linear infinite both one-2_o;"/>
+</svg>
